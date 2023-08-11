@@ -46,8 +46,8 @@ class esrgan():
         model = RRDBNet(num_in_ch=3, num_out_ch=3, num_feat=64, num_block=23, num_grow_ch=32, scale=4)
         netscale = 4
         # determine model paths
-        # model_path = os.path.join('./weights/', "RealESRGAN_x4plus" + '.pth')
-        model_path = os.path.join('src\\weights\\', "RealESRGAN_x4plus" + '.pth')
+        model_path = os.path.join('./weights/', "RealESRGAN_x4plus" + '.pth')
+        #model_path = os.path.join('src\\weights\\', "RealESRGAN_x4plus" + '.pth')
         
     # restorer
         upsampler = RealESRGANer(
