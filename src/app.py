@@ -136,7 +136,6 @@ def predicts():
             # init
             GAN = esrgan(4)
             print("[OK] Initialize GAN.")
-            '''
             # gan
             output, ret = GAN.gan_ext(img_cv)
             '''
@@ -146,6 +145,7 @@ def predicts():
                 time.sleep(5)
 
             ret = False
+            '''
 
             # ret = True is successs
             if ret:
