@@ -1,0 +1,15 @@
+<title>画像拡大アプリ Ver.0.1a</title>
+
+<h1>
+    画像拡大アプリ
+</h1>
+<h2>
+    画像を（比較的）綺麗に4倍に拡大することができます！
+</h2>
+<form method = post enctype = multipart/form-data>
+<p><input type = file name = filename></p>
+{% if error_message %}
+<p style="color: red;">{{ error_message }}</p>
+{% endif %}
+<input type = submit value = 実行！！>
+</form>
